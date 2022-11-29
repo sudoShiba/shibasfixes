@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "ShibasFixes",
+    "version": "1.0",
+  
+    "description": "Fixes for sites",
+  
+    "icons": {
+      "48": "icons/icon48.png",
+      "96": "icons/icon96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://slhd.smartschool.be/"],
+        "js": ["scripts/smartschool.js"]
+      }
+    ]
+}
