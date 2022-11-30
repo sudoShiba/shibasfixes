@@ -1,4 +1,16 @@
-const iframeWrapper = document.createElement("div");
-const target = document.querySelector("#centercontainer");
-iframeWrapper.innerHTML = `<iframe name="shibaIframe" id="shibaIframe" style="width: 100%; height:850px; border: none; overflow:hidden;" scrollable="no" src="https://slhd.smartschool.be/index.php?module=Agenda"></iframe>`;
-target.prepend(iframeWrapper); // adding iframe to the page
+const darkred = "#6f1f27";
+document.querySelector(".topnav").style.backgroundColor = darkred;
+document.querySelectorAll(".smsc-title--1").forEach(element => element.style.color = darkred);
+
+const date = new Date;
+const datetext = document.createElement("a");
+datetext.style.color = "#fff";
+datetext.style.marginLeft = "10pt";
+datetext.style.marginRight = "auto";
+datetext.href = "https://jsfiddle.net/sudoShiba/e7obzh4c/3/embedded/result";
+datetext.target = "_blank";
+datetext.innerHTML = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
+
+document.querySelector("nav.topnav").insertBefore(datetext, document.querySelector("a.topnav__btn--push-right"));
+
+setInterval(time, 500);

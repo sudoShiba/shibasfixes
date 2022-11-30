@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "ShibasFixes",
-    "version": "1.0",
+    "version": "1.1",
   
     "description": "Fixes for sites",
   
@@ -12,7 +12,7 @@
   
     "content_scripts": [
       {
-        "matches": ["*://slhd.smartschool.be/"],
+        "matches": ["*://slhd.smartschool.be/*"],
         "js": ["scripts/smartschool.js"]
       }
     ]
