@@ -1,0 +1,8 @@
+/* Dark red banner */
+.modern-ui .smsc-topnav .topnav, .smsc-topnav .topnav {
+    background: #6f1f27 !important;
+}
+
+.smsc-title--1 {
+    color: #6f1f27;
+}
