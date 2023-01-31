@@ -23,4 +23,3 @@ document.getElementById("homepage__block--scoodle").innerHTML = `<h2 class="smsc
     <li><a href="http://desmos.com" target="_blank">Desmos</a></li>
     <li><a href="http://asafraction.com" target="_blank">As a fraction</a></li>
 </ul>`;
-
