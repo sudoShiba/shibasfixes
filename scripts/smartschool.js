@@ -12,7 +12,7 @@ datetext.style.marginLeft = "10pt";
 datetext.style.marginRight = "auto";
 datetext.href = "https://jsfiddle.net/sudoShiba/e7obzh4c/3/embedded/result";
 datetext.target = "_blank";
-datetext.innerHTML = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+datetext.innerHTML = `${date.getDate() < 10 ? "0" + String(date.getDate()): date.getDate}-${date.getMonth() < 10 ? "0" + String(date.getMonth() + 1) : getMonth + 1}-${date.getFullYear()}`;
 
 document.querySelector("nav.topnav").insertBefore(datetext, document.querySelector("a.topnav__btn--push-right"));
 
