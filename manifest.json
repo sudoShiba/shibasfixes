@@ -1,19 +1,25 @@
 {
-    "manifest_version": 2,
-    "name": "ShibasFixes",
-    "version": "1.2",
+  "manifest_version": 2,
+  "name": "ShibasFixes",
+  "version": "1.2",
+
+  "description": "Fixes for sites",
+
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://slhd.smartschool.be/*"],
+      "js": ["scripts/smartschool.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "robzun1000@gmail.com"
+    }
+  }
   
-    "description": "Fixes for sites",
-  
-    "icons": {
-      "48": "icons/icon48.png",
-      "96": "icons/icon96.png"
-    },
-  
-    "content_scripts": [
-      {
-        "matches": ["*://slhd.smartschool.be/*"],
-        "js": ["scripts/smartschool.js"]
-      }
-    ]
 }

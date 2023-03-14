@@ -1,7 +1,7 @@
 // adding css
 const link = document.createElement("link")
 link.setAttribute("rel", "stylesheet");
-link.setAttribute("href","moz-extension://b95f4e1b-a336-458a-b666-a67ce0e232f8/css/ss.css");
+link.setAttribute("href","moz-moz-extension://8c49c01c-b79e-41a0-a200-bbc98172ece9/css/ss.css");
 document.head.appendChild(link);
 
 // date
