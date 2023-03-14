@@ -13,7 +13,8 @@
   "content_scripts": [
     {
       "matches": ["*://slhd.smartschool.be/*"],
-      "js": ["scripts/smartschool.js"]
+      "js": ["scripts/smartschool.js"],
+      "css": ["css/ss.css"]
     }
   ],
   "browser_specific_settings": {
