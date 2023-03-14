@@ -11,10 +11,12 @@ datetext.innerHTML = date.getDate().toString().padStart(2,"0") + "-" + (date.get
 
 document.querySelector("nav.topnav").insertBefore(datetext, document.querySelector("a.topnav__btn--push-right"));
 
-// no more scoodle
-document.getElementById("homepage__block--scoodle").innerHTML = `<h2 class="smsc-title--1">My links</h2>
+// my links
+document.getElementById("homepage__block--scoodle").insertAdjacentHTML("afterend",`<div class="mylinks">
+<h2 class="smsc-title--1">My links</h2>
 <ul>
     <li><a href="http://bonpatron.com/fr" target="_blank">BonPatron</a></li>
     <li><a href="http://desmos.com" target="_blank">Desmos</a></li>
     <li><a href="http://asafraction.com" target="_blank">As a fraction</a></li>
-</ul>`;
+</ul>
+</div>`);

@@ -14,7 +14,8 @@
     {
       "matches": ["*://slhd.smartschool.be/*"],
       "js": ["scripts/smartschool.js"],
-      "css": ["css/ss.css"]
+      "css": ["css/ss.css"],
+      "run_at": "document_end"
     }
   ],
   "browser_specific_settings": {

@@ -1,6 +1,18 @@
 /* Dark red banner */
 .modern-ui .smsc-topnav .topnav, .smsc-topnav .topnav { background: #6f1f27 }
 
-.smsc-title--1 { color: #6f1f27 }
+.smsc-title--1, h2 { 
+    color: #6f1f27 !important;
+    font-size: 18px !important;
+}
 
 button.js-btn-profile.topnav__btn.topnav__btn--profile > img { content: url("https://github.com/sudoShiba/shibasfixes/raw/master/hey.png") }
+
+/* readding grade colours */
+circle.progress-ring__svg__bar {
+    stroke: green !important;
+}
+
+.mylinks {
+    padding: 1.333rem 2rem
+}
